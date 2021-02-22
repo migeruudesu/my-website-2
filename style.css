@@ -297,7 +297,9 @@ header{
 /* about section ends here */
 .card-title{
     font-size: .8rem;
-    font-weight: 700;
+    font-weight: 500;
+    color: #0003b8;
+    text-decoration: underline;
 }
 .card-details p{
     font-size: .7rem;
