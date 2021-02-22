@@ -39,6 +39,12 @@ jsHamburger.addEventListener('click',()=>{
       removeColor()
     }
     
+    if(!animate){
+      animate1()
+    }else{
+      animate2()
+    }
+    
 })
 
 
@@ -69,7 +75,7 @@ let removeColor =  function(){
   
 window.addEventListener("scroll",()=>{
     if (document.documentElement.scrollTop > 20) {
-      jsHeader.style.transition = "all .2s";
+      jsHeader.style.transition = "all .5s";
       jsHeader.style.backgroundColor = "rgba(0,0,0)";
       // jsMlogo.style.color = "#ff5500";
       changeColor();
@@ -99,3 +105,28 @@ jsHamburger.addEventListener('click',()=>{
       // console.log('logo color is true'); test good
     }
 })
+
+let animate = false;
+let animate1 =  function(){
+  jsHamburgerLine[0].style.transform = "rotate(45deg) translate(5px,7px)";
+  jsHamburgerLine[2].style.transform = "rotate(-45deg) translate(5px,-7px)";
+  jsHamburgerLine[1].style.transform = "translateX(-50px)";
+  jsHamburgerLine[0].style.transition = "all .2s ease-out"
+  jsHamburgerLine[1].style.transition = "all .2s ease-out"
+  jsHamburgerLine[2].style.transition = "all .2s ease-out"
+  jsHamburgerLine[1].style.opacity= "0";
+
+  animate = true;
+}
+
+let animate2 =  function(){
+  jsHamburgerLine[0].style.transform = "rotate(0deg) translate(0px,0px)";
+  jsHamburgerLine[2].style.transform = "rotate(0deg) translate(0px,0px)";
+  jsHamburgerLine[1].style.transform = "translateX(0)";
+  jsHamburgerLine[0].style.transition = "all .5s ease-out"
+  jsHamburgerLine[1].style.transition = "all .5s ease-out"
+  jsHamburgerLine[2].style.transition = "all .5s ease-out"
+  jsHamburgerLine[1].style.opacity= "1";
+  
+  animate = false;
+}
