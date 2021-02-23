@@ -35,7 +35,6 @@
             </ul>
         </nav>
     </header>
-    
 
     <div id="welcome-section" class="section--mod">
         <div class="welcome-caption01">
@@ -203,11 +202,11 @@
         </div>
         <div class=contact-first-con>
             <img src="images/svg/message-sent.svg" alt="" class="contact-img1">
-            <form action="" id="form" class="contact-form--container">   
+            <form action="https://formspree.io/f/xbjpenob" id="form" class="contact-form--container" method="POST">   
                 <input type="text" name="name" id="name" placeholder="Name">         
                 <input type="email" name="email" id="email" placeholder="Email@xyz.com" required>
-                <textarea class="message" placeholder="Message"></textarea>
-                <input type="submit" value="Submit" id="submit"></input>
+                <textarea class="message" name="message" id="message" placeholder="Message"></textarea>
+                <input type="submit" value="Submit" id="form-submit" class="button"></input>
             </form>
             <img src="images/svg/computer-man.svg" alt="" class="contact-img2">
         </div>
@@ -248,5 +247,6 @@
 
     <div class="bg--animation"></div>
     <script src="apps.js"></script>
+    <script src="email.js"></script>
 </body>
 </html>

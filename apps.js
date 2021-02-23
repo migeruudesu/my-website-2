@@ -9,6 +9,7 @@ const jsMlogo = document.querySelector('.mlogo');
 const jsSocialIcon = document.querySelector('.social--container');
 // let jsHamburgerLine02 = document.querySelector('.navbar--hamburger--line');
 
+// window.scroll(0,0);
 
 let hamColor = false;
 let logoColor = false;
@@ -79,10 +80,12 @@ window.addEventListener("scroll",()=>{
       jsHeader.style.backgroundColor = "rgba(0,0,0)";
       // jsMlogo.style.color = "#ff5500";
       changeColor();
+      jsHeader.style.borderBottom = "none";
     } else if(document.documentElement.scrollTop <= 20) {
       jsHeader.style.backgroundColor = "transparent";
       // jsMlogo.style.color = "white";
       removeColor();
+      jsHeader.style.borderBottom = null;
     }
 })
 
