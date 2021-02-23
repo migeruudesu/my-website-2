@@ -363,9 +363,10 @@ header{
 }
 .card-img{
     /* background: chartreuse; */
-    width: 100%;
+    width: 90%;
     height: auto;
     position: absolute;
+    align-self: center;
 }
 .card-img--container:hover{
     transition: all .4s ease-out;
@@ -490,6 +491,12 @@ header{
         color:black;
         font-size: 1rem;
     }
+    #welcome-section{
+        padding-top: 5%;
+    }
+    .image-avatar {
+        width: 308px;
+    }
 }
 @media (min-width: 769px) and (max-width: 1024px){
     
@@ -529,15 +536,9 @@ header{
         width: 60%;
         align-items: center;
     }
-    .image-avatar {
-        min-width: 308px;
-        width: 40%;
-        /* 410px */
-    }
     .navbar--links a{
         font-size: 1rem;
     }
-
     #about-section span{
         font-size: .6rem;
     }
@@ -583,10 +584,6 @@ header{
         position: absolute;
         top:6vh;
     }
-    .image-avatar {
-        min-width: 308px;
-        max-width: 410px;
-    }
 }
 
 @media (min-width: 1281px){
@@ -606,18 +603,14 @@ header{
     .svg--container01{
         top:-5vh
     }
-    .image-avatar {
-        max-width: 410px;
-    }
-
     h1{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     h2{
-        font-size: 2.7em;
+        font-size: 2.5em;
     }
     h3{
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     
 }
