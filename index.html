@@ -11,13 +11,13 @@
 <body>
     <header>
         <nav id="navbar">
-            <h1 class="mlogo">miguelfm</h1>
+            <h1 ><a href="#welcome-section" class="mlogo elementToAnimate1">miguelfm</a></h1>
             <ul class="navbar--links">
-                <li><a href="#welcome-section"  class="navbar--links-a">Home</a></li>
-                <li><a href="#about-section"  class="navbar--links-a">About</a></li>
-                <li><a href="#works-section"  class="navbar--links-a">Works</a></li>
+                <li><a href="#welcome-section"  class="elementToAnimate2 navbar--links-a">Home</a></li>
+                <li><a href="#about-section"  class="elementToAnimate3 navbar--links-a">About</a></li>
+                <li><a href="#works-section"  class="elementToAnimate4 navbar--links-a">Works</a></li>
                 <!-- <li><a href="#blog">Blog</a></li> -->
-                <li><a href="#contact" class="button button-contact navbar--links-a"><span class="material-icons md-24">email</span> Contact</span></a></li>
+                <li><a href="#contact-section" class="elementToAnimate5 button button-contact navbar--links-a"><span class="material-icons md-24">email</span> Contact</span></a></li>
                 <li class="social--container">
                     <img src='images/email-w.svg' alt="" srcset="" class="soc--icon">
                     <img src='images/github-w.svg' alt="" srcset="" class="soc--icon">
@@ -60,7 +60,7 @@
         
         <div class="about-section--second">
                 <span class="blue_text">&lt;h2&gt;</span>
-                <h2>About me</h2>
+                <h2 class="section-title">About me</h2>
                 <span class="blue_text">&lt;/h2&gt;</span><br>
 
             <span class="blue_text">&lt;p&gt;</span>
@@ -97,7 +97,11 @@
     </div>
 
     <div id="works-section" class="works-section section--mod">
-        <h1 class="works-section--title">Works / Projects</h1>
+        <div>
+            <span class="blue_text">&lt;h2&gt;</span>
+            <h2 class="section-title">Works / Projects</h2>
+            <span class="blue_text">&lt;/h2&gt;</span>
+        </div>
         <div class="works-card-container">
             <div class="works-card">
                 <div class="card-img--container">
@@ -191,15 +195,58 @@
         </div>
     </div>
 
+    <div id="contact-section" class="contact-section">
+        <div>
+            <span class="blue_text">&lt;h2&gt;</span>
+            <h2 class="section-title">Contact me</h2>
+            <span class="blue_text">&lt;/h2&gt;</span>
+        </div>
+        <div class=contact-first-con>
+            <img src="images/svg/message-sent.svg" alt="" class="contact-img1">
+            <form action="" id="form" class="contact-form--container">   
+                <input type="text" name="name" id="name" placeholder="Name">         
+                <input type="email" name="email" id="email" placeholder="Email@xyz.com" required>
+                <textarea class="message" placeholder="Message"></textarea>
+                <input type="submit" value="Submit" id="submit"></input>
+            </form>
+            <img src="images/svg/computer-man.svg" alt="" class="contact-img2">
+        </div>
+    </div>
+
+    <div id="footer" class="footer">
+        <div class="footer--content">
+          <!-- <div class="content-details-1">
+            <p><span class="yellow_text">const</span> <span>footer</span> <span class="brown_text">=</span> <span class="yellow_text">{</span></p>
+            <p><span class="blue_text">name</span> : 'Miguel Francis'<span class="blue_text">,</span></p>
+            <p><span class="blue_text">single</span>: <span class="red_text">true</span><span class="blue_text">,</span></p>
+            <p><span class="blue_text">github</span> : <a href="https://github.com/migeruudesu">link here</a><span class="blue_text">,</span></p>
+            <p><span class="blue_text">linkedin</span> : <a href="https://www.linkedin.com/in/migeruudesu/">link here</a><span class="blue_text">,</span></p>
+            <p><span class="blue_text">fcc</span> : <a href="https://www.freecodecamp.org/migeruudesu">link here</a><span class="blue_text">,</span></p>
+            <p><span class="blue_text">dm</span> : <span class="yellow_text">{</span>
+              <br>&nbsp&nbsp&nbsp<span class="blue_text">tg</span> : <span class="green_text">'migeruudesu'</span><span class="blue_text">,</span> 
+              <br>&nbsp&nbsp&nbsp<span class="blue_text">wa</span> : <span class="green_text">'migeruudesu'</span><span class="blue_text">,</span>
+              <br>&nbsp&nbsp&nbsp<span class="blue_text">line</span> : <span class="green_text">'migeruudesu'</span><span class="yellow_text">
+              <br>&nbsp&nbsp&nbsp}</span></p>
+            <p><span class="yellow_text">}</span></p>
+          </div> -->
+    
+          <div class="content-details-2">
+              <ul class="details-2--icon">
+                <!-- <li><a href="#contact"><img src='images/email-b.svg' alt="" class="soc--icon"></a></li> -->
+                <li><a href="https://github.com/migeruudesu"><img src='images/github-b.svg' alt="" class="soc--icon"></a></li>
+                <li><a href="https://www.linkedin.com/in/migeruudesu/"><img src='images/linkedin-b.svg' alt="" class="soc--icon"></a></li>
+                <li><a href="https://www.freecodecamp.org/migeruudesu"><img src='images/fcc-b.svg' alt="" class="soc--icon"></a></li>
+                <li><a href="https://t.me/migeruudesu"><img src='images/telegram-b.svg' alt="" class="soc--icon"></a></li>
+                <li><a href="https://wa.me/09562717889"><img src='images/whatsapp-b.svg' alt="" class="soc--icon"></a></li>
+              </ul>
+              <p class="">Design and created by Miguel</p>
+              <p class="">Copyright<span class=""> ©</span>  2021</p>
+          </div>
+    
+        </div>
+    </div>
+
     <div class="bg--animation"></div>
-
-    <!-- <div class="dummy--section"></div> -->
-
-    <!-- <div id="projects">
-        <div class="project-tile"></div>
-        <a href="https://migeruudesu.github.io/fcc-tributePage/">fcc-tributePage</a>
-    </div> -->
     <script src="apps.js"></script>
-    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
 </body>
 </html>

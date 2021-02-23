@@ -115,6 +115,7 @@ let animate1 =  function(){
   jsHamburgerLine[1].style.transition = "all .2s ease-out"
   jsHamburgerLine[2].style.transition = "all .2s ease-out"
   jsHamburgerLine[1].style.opacity= "0";
+  jsHamburgerLine[0].style.backgroundColor = "red";
 
   animate = true;
 }
