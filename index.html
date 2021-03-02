@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>miguel-good-boy</title>
 </head>
 <body>
     <header>
         <nav id="navbar">
-            <h1 ><a href="#welcome-section" class="mlogo elementToAnimate1">miguelfm</a></h1>
+            <h1 ><a href="#welcome-section" class="mlogo animate__animated animate__backInLeft nav-anim1">miguelfm</a></h1>
             <ul class="navbar--links">
-                <li><a href="#welcome-section"  class="elementToAnimate2 navbar--links-a">Home</a></li>
-                <li><a href="#about-section"  class="elementToAnimate3 navbar--links-a">About</a></li>
-                <li><a href="#works-section"  class="elementToAnimate4 navbar--links-a">Works</a></li>
+                <li><a href="#welcome-section"  class="animate__animated animate__backInLeft nav-anim2 navbar--links-a">Home</a></li>
+                <li><a href="#about-section"  class="animate__animated animate__backInLeft nav-anim3 navbar--links-a">About</a></li>
+                <li><a href="#works-section"  class="animate__animated animate__backInLeft nav-anim4 navbar--links-a">Works</a></li>
                 <!-- <li><a href="#blog">Blog</a></li> -->
-                <li><a href="#contact-section" class="elementToAnimate5 button button-contact navbar--links-a"><span class="material-icons md-24">email</span> Contact</span></a></li>
+                <li><a href="#contact-section" class="button button-contact navbar--links-a animate__animated animate__backInLeft nav-anim5"><span class="material-icons md-24">email</span> Contact</span></a></li>
                 <li class="social--container">
                     <img src='images/email-w.svg' alt="" srcset="" class="soc--icon">
                     <img src='images/github-w.svg' alt="" srcset="" class="soc--icon">
@@ -25,7 +26,6 @@
                     <img src='images/fcc-w.svg' alt="" srcset="" class="soc--icon">
                     <img src='images/telegram-w.svg' alt="" srcset="" class="soc--icon">
                     <img src='images/whatsapp-w.svg' alt="" srcset="" class="soc--icon">
-
                 </li>
             </ul>
             <ul class="navbar--hamburger">
@@ -38,21 +38,23 @@
 
     <div id="welcome-section" class="section--mod">
         <div class="welcome-caption01">
-            <h2 class="text-pop-up-top">Hello World,</h2>
-            <h1 class="text-pop-up-top">I'm Miguel</h1>
-            <h3 class="text-pop-up-top">Your weeb developer.</h3>
+            <h2 class="text-pop-up-top welcome-item-01 animate__animated animate__backInRight">Hello World,</h2>
+            <h1 class="text-pop-up-top  welcome-item-02 animate__animated animate__backInLeft">I'm Miguel</h1>
+            <h3 class="text-pop-up-top  welcome-item-03 animate__animated animate__backInRight">Your weeb developer.</h3>
         </div>
-        <img src='images/avatar.png' alt="" class="image-avatar">
-            <!-- <div class="image-container"></div> -->
+        <img src='images/avatar.png' alt="" class="image-avatar  welcome-item-04 animate__animated animate__backInLeft">
         <div class="welcome-caption02">
-            <!-- <p class="welcome-details">Have something in mind?</p>
-            <p class="welcome-details">Wanna work together?</p>
-            <p class="welcome-details">Hit me up!</p> -->
-            <p class="welcome-details">Will work for foods 😅</p>
+            <p class="welcome-details  welcome-item-05 animate__animated animate__backInRight">Will work for foods 😅</p>
         </div>
         <div class="button-container">
-            <div class="button"><span class="button-content"><span class="material-icons md-24">cloud_download</span> Resume</span></div>
-            <div class="button"><span class="button-content"><span class="material-icons md-24">email</span> Contact</span></div>
+            <a href="Miguel's Resume.pdf" download="">
+                <div class="button animate__animated animate__heartBeat">
+                    <span class="button-content  welcome-item-06">
+                        <span class="material-icons md-24">cloud_download</span> Resume
+                    </span>
+                </div>
+            </a>
+            <div class="button  welcome-item-07 animate__animated animate__heartBeat"><span class="button-content"><span class="material-icons md-24">email</span> Contact</span></div>
         </div>
     </div>
     <div id="about-section" class="section--mod">
@@ -102,6 +104,50 @@
             <span class="blue_text">&lt;/h2&gt;</span>
         </div>
         <div class="works-card-container">
+
+            
+            <div class="works-card">
+                <div class="card-img--container">
+                    <img src='images/card-images/drumss.png' alt="" class="card-img">
+                </div>
+                <div class="card-body"> 
+                    <div class="card-icon-container">
+                        <img src="images/logos-html.svg" alt="" class="card-icon">
+                        <img src="images/logos-css.svg" alt="" class="card-icon">
+                        <img src="images/logos-js.svg" alt="" class="card-icon">
+                    </div>
+                    <div><a href="https://migeruudesu.github.io/Drum-Kit-Challenge/" class="card-title">Drum kit challenge</a></div>
+                    <div class="card-details">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, officiis facilis accusamus ea ipsam nemo.</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="https://migeruudesu.github.io/fcc-surveyForm/" class="button">live</a>
+                        <a href="https://github.com/migeruudesu/fcc-surveyForm" class="button">code</a>
+                    </div>
+                </div>   
+            </div>
+            
+            <div class="works-card">
+                <div class="card-img--container">
+                    <img src='images/card-images/dicess.png' alt="" class="card-img">
+                </div>
+                <div class="card-body"> 
+                    <div class="card-icon-container">
+                        <img src="images/logos-html.svg" alt="" class="card-icon">
+                        <img src="images/logos-css.svg" alt="" class="card-icon">
+                        <img src="images/logos-js.svg" alt="" class="card-icon">
+                    </div>
+                    <div><a href="https://migeruudesu.github.io/Boss-Level-Challenge-1---The-Dicee-Game/" class="card-title">Dice game</a></div>
+                    <div class="card-details">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, officia.</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="https://migeruudesu.github.io/fcc-surveyForm/" class="button">live</a>
+                        <a href="https://github.com/migeruudesu/fcc-surveyForm" class="button">code</a>
+                    </div>
+                </div>   
+            </div>
+
             <div class="works-card">
                 <div class="card-img--container">
                     <img src='images/card-images/survey.png' alt="" class="card-img">
@@ -214,34 +260,18 @@
 
     <div id="footer" class="footer">
         <div class="footer--content">
-          <!-- <div class="content-details-1">
-            <p><span class="yellow_text">const</span> <span>footer</span> <span class="brown_text">=</span> <span class="yellow_text">{</span></p>
-            <p><span class="blue_text">name</span> : 'Miguel Francis'<span class="blue_text">,</span></p>
-            <p><span class="blue_text">single</span>: <span class="red_text">true</span><span class="blue_text">,</span></p>
-            <p><span class="blue_text">github</span> : <a href="https://github.com/migeruudesu">link here</a><span class="blue_text">,</span></p>
-            <p><span class="blue_text">linkedin</span> : <a href="https://www.linkedin.com/in/migeruudesu/">link here</a><span class="blue_text">,</span></p>
-            <p><span class="blue_text">fcc</span> : <a href="https://www.freecodecamp.org/migeruudesu">link here</a><span class="blue_text">,</span></p>
-            <p><span class="blue_text">dm</span> : <span class="yellow_text">{</span>
-              <br>&nbsp&nbsp&nbsp<span class="blue_text">tg</span> : <span class="green_text">'migeruudesu'</span><span class="blue_text">,</span> 
-              <br>&nbsp&nbsp&nbsp<span class="blue_text">wa</span> : <span class="green_text">'migeruudesu'</span><span class="blue_text">,</span>
-              <br>&nbsp&nbsp&nbsp<span class="blue_text">line</span> : <span class="green_text">'migeruudesu'</span><span class="yellow_text">
-              <br>&nbsp&nbsp&nbsp}</span></p>
-            <p><span class="yellow_text">}</span></p>
-          </div> -->
-    
-          <div class="content-details-2">
-              <ul class="details-2--icon">
-                <!-- <li><a href="#contact"><img src='images/email-b.svg' alt="" class="soc--icon"></a></li> -->
-                <li><a href="https://github.com/migeruudesu"><img src='images/github-b.svg' alt="" class="soc--icon"></a></li>
-                <li><a href="https://www.linkedin.com/in/migeruudesu/"><img src='images/linkedin-b.svg' alt="" class="soc--icon"></a></li>
-                <li><a href="https://www.freecodecamp.org/migeruudesu"><img src='images/fcc-b.svg' alt="" class="soc--icon"></a></li>
-                <li><a href="https://t.me/migeruudesu"><img src='images/telegram-b.svg' alt="" class="soc--icon"></a></li>
-                <li><a href="https://wa.me/09562717889"><img src='images/whatsapp-b.svg' alt="" class="soc--icon"></a></li>
-              </ul>
-              <p class="">Design and created by Miguel</p>
-              <p class="">Copyright<span class=""> ©</span>  2021</p>
-          </div>
-    
+            <div class="content-details-2">
+                <ul class="details-2--icon">
+                  <!-- <li><a href="#contact"><img src='images/email-b.svg' alt="" class="soc--icon"></a></li> -->
+                  <li><a href="https://github.com/migeruudesu"><img src='images/github-b.svg' alt="" class="soc--icon"></a></li>
+                  <li><a href="https://www.linkedin.com/in/migeruudesu/"><img src='images/linkedin-b.svg' alt="" class="soc--icon"></a></li>
+                  <li><a href="https://www.freecodecamp.org/migeruudesu"><img src='images/fcc-b.svg' alt="" class="soc--icon"></a></li>
+                  <li><a href="https://t.me/migeruudesu"><img src='images/telegram-b.svg' alt="" class="soc--icon"></a></li>
+                  <li><a href="https://wa.me/09562717889"><img src='images/whatsapp-b.svg' alt="" class="soc--icon"></a></li>
+                </ul>
+                <p class="">Design and created by Miguel</p>
+                <p class="">Copyright<span class=""> ©</span>  2021</p>
+            </div>
         </div>
     </div>
 

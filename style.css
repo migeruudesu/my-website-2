@@ -59,7 +59,7 @@ div,section{
     color: #745500;
   }
 .button{
-    border: 1px solid rgb(8, 56, 187);
+    border: 2px solid rgb(8, 56, 187);
     /* width: 125px; */
     padding: 7px 15px;
     border-radius: 25px;
@@ -101,21 +101,20 @@ h3{
     font-size: 1.2rem;
     font-weight:500;
 }
-
-.elementToAnimate1{
-    animation: yourAnimation 1s 1 .1s ease-in-out;
+.nav-anim1{
+    --animate-duration: 1.7s;
 }
-.elementToAnimate2{
-    animation: yourAnimation 1s 1 .4s ease-in-out;
+.nav-anim2{
+    --animate-duration: 1.2s;
 }
-.elementToAnimate3{
-    animation: yourAnimation 1s 1 .6s ease-in-out;
+.nav-anim3{
+    --animate-duration: 1s;
 }
-.elementToAnimate4{
-    animation: yourAnimation 1s 1 .8s ease-in-out;
+.nav-anim4{
+    --animate-duration: .8s;
 }
-.elementToAnimate5{
-    animation: yourAnimation 1s 1 1s ease-in-out;
+.nav-anim5{
+    --animate-duration: .6s;
 }
 
  /* animation ends here */
@@ -182,13 +181,20 @@ header{
     justify-content: space-between;
 }
 .navbar--links-a{
-    padding: 0 10px;
+    width: 120px;
     color:white;
     font-size: .7rem;
+    text-align: center;
 }
 .button-contact{
-    border: 2px solid rgb(8, 56, 187);
+    width: 150px;
+    border: 1.5px solid rgb(8, 56, 187);
     padding: 5px 10px;
+}
+.button-contact:hover{
+    color: white;
+    /* transform: scale(1.2,1.2); */
+    transform: scale(1.5,1.5);
 }
 .navbar--hamburger{
     display: none;
@@ -202,13 +208,9 @@ header{
 .mlogo.changecolor{
     color:#ff5500;
 }
-
-.navbar--links-a:hover{
-    color: rgb(8, 56, 187);
-    /* background-color: #a1a1a1; */
-    /* animation: text-pop-up-top .1s ; */
-    transform: translateY(-5px)scale(.9,.9)rotate(10deg);
-    transition: .1s all ease-in-out;
+.navbar--links-a:hover{  
+    color:#000000;  
+    font-weight: 700;
 }
 #welcome-section{
     margin-top: 7vh;
@@ -221,6 +223,31 @@ header{
     gap: 10px;
     padding: 10% 0 5% 0;
 }
+.welcome-item-01{
+    
+}
+.welcome-item-02{
+    
+}
+.welcome-item-03{
+    
+}
+.welcome-item-04{
+    
+}
+.welcome-item-05{
+    
+}
+.welcome-item-06{
+    --animate-duration: 800ms;
+    --animate-delay: 1.2s;
+    
+}
+.welcome-item-07{
+    --animate-duration: 800ms;
+    --animate-delay: 1.5s;
+    
+}
 .welcome-caption01,.welcome-caption02{
     width: 100%;
     display: flex;
@@ -232,21 +259,27 @@ header{
     font-size: .9rem;
     font-weight: 500;
 }
+.image-avatar{
+    margin: 1% 0;
+}
 .button-container{
+    width: 310px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap:15px;
     padding-top: 2%
 }
 
 .bg--animation{
-    /* background: rgb(127, 255, 0,.5);  */
-    margin-top: 1vh;
+    /* background: rgb(127, 255, 0,.09);  */
+    /* margin-top: 1vh; */
     width: 100%;
-    height: 70vh;
-    position:absolute;
+    height: 100vh;
+    position:fixed;
     z-index: -5;
-    display: none;
+    top:0;
+    /* display: none; */
 }
 .dummy--section{
     height: 400vh;
@@ -290,7 +323,7 @@ header{
 /* about section ends here */
 
 .card-details p{
-    font-size: .8rem;
+    font-size: .7rem;
     font-weight: 400;
 }
 .card-button .button a{
@@ -300,7 +333,6 @@ header{
 .card-details a{
     color: rgb(25, 0, 255);
 }
-
 #works-section{
     margin-top: 7vh;
     min-height: 93vh;
@@ -321,6 +353,7 @@ header{
     flex-wrap: wrap;
     justify-content: center;
     padding: 1%;
+    margin-top: 5vh;
 }
 .works-card{
     background-color: rgb(160, 160, 160);
@@ -422,6 +455,7 @@ header{
     align-items: center;
     position: relative;
     gap: 20px;
+    margin-top: 2vh;
 }
 .contact-img1,.contact-img2{
     display: none;
@@ -660,10 +694,6 @@ header{
     .welcome-details{
         font-size: 1.2rem;
     }
-    .bg--animation{
-        height: 75vh;
-        margin-top: 10vh;
-    }
     .svg--container02{
         top: 2.3vh; 
     }
@@ -707,11 +737,6 @@ header{
     .welcome-details{
         font-size: 1.2rem;
     }
-    .bg--animation{
-        height: 80vh;
-        margin-top: 10vh;
-    }
-    
     .navbar--links{
         width: 60%;
     }
@@ -736,10 +761,6 @@ header{
     } */
     .svg--container03{
         position: absolute;
-    }
-    .bg--animation{
-        height: 80vh;
-        margin-top: 10vh;
     }
     .svg--container01{
         top:-5vh
