@@ -153,4 +153,6 @@ let animate2 =  function(){
   animate = false;
 }
 
+//this is for smoth scrolling
+var scroll = new SmoothScroll('a[href*="#"]');
 

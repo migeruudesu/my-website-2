@@ -12,13 +12,13 @@
 <body>
     <header>
         <nav id="navbar">
-            <h1 ><a href="#welcome-section" class="mlogo animate__animated animate__backInLeft nav-anim1">miguelfm</a></h1>
+            <h1 ><a data-scroll href="#welcome-section" class="mlogo animate__animated animate__backInLeft nav-anim1">miguelfm</a></h1>
             <ul class="navbar--links">
-                <li><a href="#welcome-section"  class="animate__animated animate__backInLeft nav-anim2 navbar--links-a">Home</a></li>
-                <li><a href="#about-section"  class="animate__animated animate__backInLeft nav-anim3 navbar--links-a">About</a></li>
-                <li><a href="#works-section"  class="animate__animated animate__backInLeft nav-anim4 navbar--links-a">Works</a></li>
+                <li><a data-scroll href="#welcome-section"  class="animate__animated animate__backInLeft nav-anim2 navbar--links-a">Home</a></li>
+                <li><a data-scroll href="#about-section"  class="animate__animated animate__backInLeft nav-anim3 navbar--links-a">About</a></li>
+                <li><a data-scroll href="#works-section"  class="animate__animated animate__backInLeft nav-anim4 navbar--links-a">Works</a></li>
                 <!-- <li><a href="#blog">Blog</a></li> -->
-                <li><a href="#contact-section" class="button navbar--links-a animate__animated animate__backInLeft nav-anim5"><span class="material-icons md-24">email</span> Contact</span></a></li>
+                <li><a data-scroll href="#contact-section" class="button navbar--links-a animate__animated animate__backInLeft nav-anim5"><span class="material-icons md-24">email</span> Contact</span></a></li>
                 <li class="social--container">
                     <img src='images/email-w.svg' alt="" srcset="" class="soc--icon">
                     <img src='images/github-w.svg' alt="" srcset="" class="soc--icon">
@@ -59,13 +59,11 @@
                 </span>
             </a>
 
-            
-            
-            <div class="button  welcome-item-07 animate__animated animate__heartBeat">
+            <a href="#contact-section" class="button  welcome-item-07 animate__animated animate__heartBeat">
                 <span class="button-content">
                     <i class="material-icons md-24">email</i> Contact
                 </span>
-            </div>
+            </a>
         </div>
     </div>
     <div id="about-section" class="section--mod">
@@ -287,6 +285,7 @@
     </div>
 
     <div class="bg--animation"></div>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="main.js"></script>
     <script src="email.js"></script>
 </body>
