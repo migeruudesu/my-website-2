@@ -88,7 +88,7 @@ window.addEventListener("scroll",()=>{
 
         // add border when scrolled
         jsNavbarLinksa.forEach((link,index,arr)=>{
-          arr[3].style.border = "3px solid #ff5500";
+          arr[3].style.border = "2px solid #ff5500";
         })
 
     } else if(document.documentElement.scrollTop <= 20) {
@@ -96,10 +96,11 @@ window.addEventListener("scroll",()=>{
         // jsMlogo.style.color = "white";
         removeColor();
         jsHeader.style.borderBottom = null;
+        jsHeader.style.boxShadow = "none";
 
         // add border when scrolled
         jsNavbarLinksa.forEach((link,index,arr)=>{
-          arr[3].style.border = "3px solid grey";
+          arr[3].style.border = "2px solid grey";
         })
 
         jsHeader.style.boxShadow = "none";

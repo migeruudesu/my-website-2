@@ -164,10 +164,10 @@ header{
     color: #ff5500;
 }
 .navbar--links{
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 .social--container{
@@ -183,23 +183,20 @@ header{
     color:#ff5500;
 }
 .navbar--links-a{
-    width: 120px;
+    width: 100%;
     font-size: .7rem;
     text-align: center;
 }
 .navbar--links li:hover{
-    transform: scale(1.5,1.5);
+    transform: scale(1.2,1.2);
     font-weight: 500;
-    transition: all .1s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 .navbar--links li a:hover{
-    color: rgb(40, 151, 255);
+    color: rgb(57, 112, 163);
 }
 .navbar--links li:nth-child(4) a{
-    border: 2.5px solid rgba(48, 48, 48, 0.5);
-    height: 2.5rem;
-    height: 3rem;
-    width: 200px;
+    width: 150px;
 }
 .navbar--links li:nth-child(4):hover{
     transform: scale(1.1,1.1);
@@ -515,7 +512,6 @@ header{
     border:2px solid red;
     filter: drop-shadow(0 0 5px #700000);
 }
-
 /* contact section ends here */
 #footer{
     background: rgb(240, 240, 240);
@@ -703,10 +699,10 @@ header{
         position: absolute;
         top:4.6vh;
     }
-    .navbar--links{
-        width: 60%;
+    /* .navbar--links{
+        width: 80%;
         align-items: center;
-    }
+    } */
     .navbar--links a{
         font-size: 1rem;
     }
